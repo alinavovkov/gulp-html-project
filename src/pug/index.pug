@@ -1,0 +1,112 @@
+extends common/layout
+
+block content 
+    .how-work
+      .container-300
+        span.title-block How Dreamshare works?
+        .steps
+          .step-one
+            .layer-for-background
+              .text-step
+                button.name-step(type='button') STEP 1
+                span.title-step Sed leo enim, condimentum
+                p.subtext-step
+                  | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo
+                  | sit amet facilisis.
+          .step-two
+            .layer-for-background
+              .text-step
+                button.name-step(type='button') STEP 2
+                span.title-step Morbi velit risus
+                p.subtext-step
+                  | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+          .step-three
+            .layer-for-background
+              .text-step
+                button.name-step(type='button') STEP 3
+                span.title-step Sed leo enim, condimentum
+                p.subtext-step
+                  | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo
+                  | sit amet facilisis.
+    .partner-block
+      .container-280
+        span.title-block Meet a partner for your best holiday
+        .partners-info
+          .partners-cards
+            .row-first-partners
+              .partner-first
+                img.main-photo-partner(src='images/avatar1.png', alt='')
+                span.name-partner Bradley Hunter
+                p.subtitle-partner Based in Chicago. I love playing tennis and loud music.
+              .partner-second
+                img.main-photo-partner(src='images/avatar2.png', alt='')
+                span.name-partner Diana Wells
+                p.subtitle-partner Living in Athens, Greece. I love black and white classics, chillout music, and green tea.
+            .row-second-partners
+              .partner-third
+                img.main-photo-partner(src='images/avatar3.png', alt='')
+                span.name-partner Marie Bennett
+                p.subtitle-partner Currently living in Colorado. Lover of art, languages, and traveling.
+              .partner-fourth
+                img.main-photo-partner(src='images/avatar4.png', alt='')
+                span.name-partner Christopher Pierce
+                p.subtitle-partner Star Wars fanatic. I have a persistent enthusiasm to create new things.
+          button.more-partners(type='button') See other partners
+    .ideas
+      .container-300
+        span.title-block Discover holiday activity ideas
+        .row-first-activities
+          .idea-block
+            .idea
+              .layer-background.img-bg-first
+            .content-idea-card
+              span Sports and
+                br
+                | Activis
+          .idea-block
+            .idea
+              .layer-background.img-bg-sec
+            .content-idea-card
+              span Wellness and
+                br
+                | Health
+          .idea-block
+            .idea
+              .layer-background.img-bg-third
+            .content-idea-card
+              span Extreme Sports
+                br
+                | and Expeditions
+        .row-second-activities
+          .small-part-activity
+            .idea-block
+              .idea
+                .layer-background.img-bg-fourth
+              .content-idea-card
+                span Games
+          .big-part-activity
+            .idea-block
+              .idea
+                .layer-background.img-bg-fifth
+              .content-idea-card
+                span Culture and Education
+        .row-third-activities
+          .big-part-activity
+            .idea-block
+              .idea
+                .layer-background.img-bg-sixth
+              .content-idea-card
+                span Enjomet and Relaxation
+          .small-part-activity
+            .idea-block
+              .idea
+                .layer-background.img-bg-seventh
+              .content-idea-card
+                span Trevelling
+    .create-block
+      .container-280
+        span.title-block Crate your holiday activity
+        p.subtitle-create Hi! What are your holiday interests?
+        .find-partner
+          input.input-create(placeholder='Enter your interests')
+          button.button-create.find(type='button') Search partners

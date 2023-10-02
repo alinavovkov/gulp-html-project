@@ -1,0 +1,152 @@
+// header {
+//     height: 70px;
+//     background-color: #947676;
+//     text-align: center;
+// }
+.main-block {
+    min-width: 320px;
+    height: 556px;
+    width: 100%;
+    background: $black;
+    position: absolute;
+}
+// adding eclipse for backgroud
+.top-content {
+    height: 556px;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-main.png) lightgray;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    background-color: $light-grey;
+    opacity: 0.8;
+}
+
+.layer-background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background: linear-gradient(0deg, #FF4E50 0%, #F9D423 100%);
+}
+
+.content-main-block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.logo-white {
+    display: none;
+}
+
+.autorize-buttons {
+    width: 100%;
+    padding-top: 20px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in,
+.sign-up {
+    @include button (90px, 36px, transparent);
+    color: $main-color;
+}
+
+.sign-up {
+    border: 2px solid $main-color;
+    border-radius: 40px;
+}
+
+.log-in {
+    border: none;
+}
+
+// all text for main block
+.text-main-block {
+    width: 100%;
+    margin-top: 106px;
+    color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-text {
+    font-family: $main-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 26.5px;
+}
+
+.title-text {
+    font-family: $main-font;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 5.5px;
+
+}
+
+.subtitle {
+    font-family: $main-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24.5px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.find {
+    @include button (280px, 40px, $accent-color);
+    font-family: $main-font;
+    color: $main-color;
+    border-radius: 40px;
+    flex-shrink: 0;
+    border: none;
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-white {
+        display: flex;
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 20px;
+
+    }
+
+    .autorize-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .name-text {
+        display: none;
+    }
+}

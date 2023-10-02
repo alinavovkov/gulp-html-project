@@ -1,0 +1,17 @@
+@mixin box ($w, $h, $c) {
+    width: $w;
+    height: $h;
+    background-color: $c;
+}
+
+@mixin paddings-margins ($p, $m) {
+    padding: $p;
+    margin: $m; 
+}
+
+@mixin button ($w, $h, $bc) {
+    width: $w;
+    height: $h;
+    background-color: $bc;
+}
+
